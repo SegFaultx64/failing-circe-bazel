@@ -21,6 +21,7 @@ scala_import(
     exports = [
         "//3rdparty/jvm/com/chuusai:shapeless",
         "//3rdparty/jvm/org/scala_lang:scala_library",
+        "//3rdparty/jvm/org/typelevel:cats_core",
         ":circe_core"
     ],
     jars = [

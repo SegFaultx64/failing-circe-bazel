@@ -22,6 +22,10 @@ dependencies:
     circe-generic:
       version: "0.12.3"
       lang: scala
+      exports: # due to the macros, these need to be here at compile time
+        - "com.chuusai:shapeless"
+        - "io.circe:circe-core"
+        - "org.typelevel:cats-core"
   com.chuusai:
     shapeless:
       version: "2.3.3"
