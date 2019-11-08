@@ -1,0 +1,28 @@
+options:
+  languages: [ "java", "scala:2.12.8" ]
+  transitivity: exports
+  buildHeader:
+  - load("@io_bazel_rules_scala//scala:scala_import.bzl", "scala_import")
+
+dependencies:
+  org.typelevel:
+    cats:
+      version: "2.0.0"
+      lang: scala
+      modules:
+        - core
+  io.circe:
+    circe:
+      version: "0.12.3"
+      lang: "scala"
+      modules:
+        - core
+        - generic
+        - parser
+    circe-generic:
+      version: "0.12.3"
+      lang: scala
+  com.chuusai:
+    shapeless:
+      version: "2.3.3"
+      lang: "scala"

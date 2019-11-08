@@ -1,0 +1,4 @@
+INFO  time: initialize in 0.59s
+WARN  the build tool Bazel is not supported by Metals, please open an issue if you would like to contribute to improve the situation.
+WARN  no build target: /Users/mwalker1/workspace/personal-projects/failing-circe-bazel/src/Test.scala
+WARN  no build target: /Users/mwalker1/workspace/personal-projects/failing-circe-bazel/src/Test.scala
