@@ -4,10 +4,10 @@ scala_import(
     exports = [
         "//3rdparty/jvm/org/scala_lang:scala_library",
         "//3rdparty/jvm/org/typelevel:cats_core",
-        ":circe_numbers_2_12"
+        ":circe_numbers_2_11"
     ],
     jars = [
-        "//external:jar/io/circe/circe_core_2_12"
+        "//external:jar/io/circe/circe_core_2_11"
     ],
     visibility = [
         "//visibility:public"
@@ -25,7 +25,7 @@ scala_import(
         ":circe_core"
     ],
     jars = [
-        "//external:jar/io/circe/circe_generic_2_12"
+        "//external:jar/io/circe/circe_generic_2_11"
     ],
     visibility = [
         "//visibility:public"
@@ -38,11 +38,11 @@ scala_import(
     name = "circe_jawn",
     exports = [
         "//3rdparty/jvm/org/scala_lang:scala_library",
-        "//3rdparty/jvm/org/typelevel:jawn_parser_2_12",
+        "//3rdparty/jvm/org/typelevel:jawn_parser_2_11",
         ":circe_core"
     ],
     jars = [
-        "//external:jar/io/circe/circe_jawn_2_12"
+        "//external:jar/io/circe/circe_jawn_2_11"
     ],
     visibility = [
         "//3rdparty/jvm:__subpackages__"
@@ -52,10 +52,10 @@ scala_import(
 
 
 java_library(
-    name = "circe_numbers_2_12",
+    name = "circe_numbers_2_11",
     exports = [
         "//3rdparty/jvm/org/scala_lang:scala_library",
-        "//external:jar/io/circe/circe_numbers_2_12"
+        "//external:jar/io/circe/circe_numbers_2_11"
     ],
     visibility = [
         "//3rdparty/jvm:__subpackages__"
@@ -72,7 +72,7 @@ scala_import(
         ":circe_jawn"
     ],
     jars = [
-        "//external:jar/io/circe/circe_parser_2_12"
+        "//external:jar/io/circe/circe_parser_2_11"
     ],
     visibility = [
         "//visibility:public"

@@ -4,6 +4,7 @@ scala_library(
     name = "services",
     srcs = glob(["Test.scala"]),
     visibility = ["//visibility:public"],
+    plugins = ["@org_scalamacros_paradise_2_12_0//jar"],
     deps = [
         "//3rdparty/jvm/io/circe:circe_core",
         "//3rdparty/jvm/io/circe:circe_generic",

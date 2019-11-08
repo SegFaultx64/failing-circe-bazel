@@ -1,5 +1,5 @@
 options:
-  languages: [ "java", "scala:2.12.8" ]
+  languages: [ "java", "scala:2.11.12" ]
   transitivity: exports
   buildHeader:
   - load("@io_bazel_rules_scala//scala:scala_import.bzl", "scala_import")
@@ -13,14 +13,14 @@ dependencies:
         - core
   io.circe:
     circe:
-      version: "0.12.3"
+      version: "0.11.0"
       lang: "scala"
       modules:
         - core
         - generic
         - parser
     circe-generic:
-      version: "0.12.3"
+      version: "0.11.0"
       lang: scala
       exports: # due to the macros, these need to be here at compile time
         - "com.chuusai:shapeless"

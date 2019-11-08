@@ -3,10 +3,10 @@ scala_import(
     name = "shapeless",
     exports = [
         "//3rdparty/jvm/org/scala_lang:scala_library",
-        "//3rdparty/jvm/org/typelevel:macro_compat_2_12"
+        "//3rdparty/jvm/org/typelevel:macro_compat_2_11"
     ],
     jars = [
-        "//external:jar/com/chuusai/shapeless_2_12"
+        "//external:jar/com/chuusai/shapeless_2_11"
     ],
     visibility = [
         "//visibility:public"
